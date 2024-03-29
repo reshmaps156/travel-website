@@ -1,0 +1,161 @@
+/* common style */
+
+:root{
+    --headingFont:"Edu NSW ACT Foundation", cursive;
+}
+.fontf{
+    font-family: var(--headingFont );
+}
+h5{
+    font-family: var(--headingFont);
+}
+ul{
+    list-style: none;
+}
+
+
+/* navar */
+.navbar{
+    background-color: rgba(39, 35, 35, 0.173);
+}
+
+.navbar-brand{
+    font-family: var(--headingFont);
+}
+.nav-item a{
+    font-family: var(--headingFont);
+    
+}
+.nav-item a:hover{
+   text-decoration:overline ;
+}
+
+
+
+/* home */
+
+.carousal-title{
+    width: 60%;
+    height: 300px;
+    color: rgb(233, 250, 48);
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--headingFont);
+   
+}
+.carousal-title h1{
+    font-size: 100px;
+}
+@media(max-width:768px){
+    .carousal-title h1{
+        font-size: 50px;
+        margin-top: 60px;
+    }
+
+    .carousal-title button{
+        display: none;
+    }
+    .carousel-control-prev-icon{
+        visibility: hidden;
+    }
+    .carousel-control-next-icon{
+        visibility: hidden;
+    }
+    
+    
+}
+@media(max-width:992px){
+   
+    .carousel-control-prev-icon{
+        visibility: hidden;
+    }
+    .carousel-control-next-icon{
+        visibility: hidden;
+    }
+    
+    
+}
+
+
+
+/* destination */
+#Destinations{
+    background-color: rgba(128, 128, 128, 0.278);
+}
+.cardOne:hover{
+   transform: scale(1.1);
+   
+    
+}
+@media(max-width:768px){
+    .card{
+        margin-left: 5%;
+    }
+    
+}
+/* events */
+#events{
+    background-image: url(./media/89780.jpg)   ;
+    background-size: contain;
+}
+.eventPara{
+    text-align: justify;
+}
+
+.pooram{
+    height: 354px;
+}
+@media(max-width:768px){
+    .pooram{
+        height: 100%;
+    }
+    
+}
+.eventSection{
+    position: relative;
+}
+.eventDate{
+    height: 65px;
+    width: 70px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}
+/* gallery */
+.galleryPic:hover{
+    transform: scale(1.1);
+}
+
+
+/* services */
+
+#services{
+    background-color: rgba(168, 157, 157, 0.07);
+}
+
+@media(max-width:768px){
+  .viewBtn{
+    visibility: hidden;
+   
+  }
+}
+/* footer */
+
+#footer{
+    background-color:  rgba(25, 135, 84, 0.378);
+}
+.social i:hover{
+    animation: 0.7s iconing ;
+}
+@keyframes iconing{
+    0%{transform: rotate(45deg);}
+    50%{transform: rotate(-45deg);}
+    30%{transform: rotate(45deg);}
+    20%{transform: rotate(-45deg);}
+    
+}
